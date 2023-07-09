@@ -1,0 +1,240 @@
+
+.box-sizing{
+    margin:0px;
+}
+.box {
+    
+    
+    width:100%;
+    height:65px;
+    
+    
+}
+
+body{
+    background-color:black;
+    
+}
+.boxx{
+    
+    
+    width:100%;
+    height:20px;
+    
+}
+
+.newbox{
+    
+    
+    width:100%;
+    height:4px;
+    
+}
+.new{
+    color:red;
+    height:4px;
+    
+}
+.image1 {
+    width:80px;
+    
+    padding: 2px 0px 0px 80px;
+    float:left;
+    
+}
+.word {
+    width:107px;
+    height:50px;
+    padding: 0px 0px 0px 6px;
+    float:left;
+
+   
+}
+
+.words {
+    
+    
+    line-height:66px;
+    color: White;
+    font-size:normal;
+    font-size: 23px;
+    font-family: Karantina;   
+}
+.data{
+    width:107px;
+    height:50px;
+    padding: 0px 0px 0px 0px;
+    float:right;
+    
+    color:white;
+    font-size: 23px;
+    line-height:63px;
+    font-family: Karantina;
+}
+.data1{
+    width:71px;
+    height:50px;
+    padding: 0px 0px 0px 0px;
+    float:right;
+   
+    color:white;
+    font-size: 23px;
+    line-height:63px;
+    font-family: Karantina;
+}
+.color{
+    border:1px solid red;
+
+}
+
+.againbox { 
+    border:2px solid green;
+
+    height:42px;
+    margin:22px 0px 0px 0px;
+    color:white;
+    font-size: 23px;
+    line-height:20px;
+    font-family: Karantina;
+    padding:28px 0px 0px 158px;
+}
+
+.row {
+    width:960px;
+    height:305px;
+    border-bottom:1px solid red;
+    border:1px solid yellow;
+    margin:auto;
+    
+}
+.hor{
+    border:1px solid pink;
+}
+.footer1{
+    
+    
+    width:960px;
+    height:261px;
+   
+    border:1px solid pink;
+    margin:78px 0px 0px 149px;
+    
+    
+}
+
+.footer2{
+   
+    color: var(--text, #F3F3F3);
+    font-size: 20px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+.footer3{
+    color: var(--text, #F3F3F3);
+    font-size: 13px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+}
+.footer4{
+    border:1px solid orange;
+    height:30px;
+    width:200px;
+    margin:20px 0px 0px 1px;
+    background-color:red;
+}
+.footer5{
+    padding:10px 0px 0px 40px;
+    line-height:100%;
+    
+}
+.footer6 {
+    height: 135px;
+    background: var(--bg-secondary, #272734);
+    border:2px solid red;
+}
+
+.coll{
+    width: 200px;
+    height: 252px;
+    flex-shrink: 0;
+    border:1px solid blue;
+    float:left;
+}
+.image11{
+    padding:77px 0px 0px 157px;
+}
+
+.colll{
+    width: 740px;
+    height: 252px;
+    flex-shrink: 0;
+    border:1px solid red;
+    float:left;
+    margin-left:14px;
+    color:blue;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+.container{
+    border:2px solid red;
+    background-color:black;
+}
+
+.action_row{
+    border:1px solid red;
+    height:41px;
+    width:738px;
+    margin-top:54px;
+}
+h1{
+    height:39px;
+    width:12px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.drow{
+    height:40px;
+    width:64px;
+    border:1px solid red;
+    float:left;
+    background-color:#272734;
+}
+.like{
+    height:39px;
+    width:35px;
+    border:1px solid red;
+    float:left;
+}
+.bo{
+    height:39px;
+    width:32px;
+    border:1px solid red;
+    float:left;
+    border-radius:32px;
+    text-align:center;
+    line-height:38px;
+    margin:0px 0px 0px 6px;
+    
+}
+.dislike{
+    height:39px;
+    width:35px;
+    border:1px solid red;
+    float:left;
+    margin:0px 0px 0px 6px;
+}
+.delete{
+    height:39px;
+    width:35px;
+    border:1px solid red;
+    float:right;
+    margin:0px 0px 0px 6px;
+
+}
+
