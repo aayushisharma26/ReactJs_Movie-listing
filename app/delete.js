@@ -1,14 +1,15 @@
-const Delete = ()=>{
+const Delete = (props)=>{
     return(
         <>
             <div className="delete">
-                <img src="delete.svg" />
-               
+
+
+                <div onClick ={props.onDelete}><img src="delete.svg"/></div>
             </div>
 
-        
+            
 
-            <div className="like" onClick={handleLikeClick}><img src="image.svg" /></div>
+
         </>
     );
 }

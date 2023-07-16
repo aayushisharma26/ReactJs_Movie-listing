@@ -1,5 +1,5 @@
-import Action from "./Action.js"
-
+import Likedislike from "./likedislike.js";
+import Delete from "./delete.js";
 const Movie_row = (props)=>{
     return(
 
@@ -12,11 +12,21 @@ const Movie_row = (props)=>{
                 <h1>{props.movie}</h1>
                 <p>{props.moviee}</p>
                 <h1>Description</h1>
-                <Action/>
+                <div className="action_row"> 
+                    <Likedislike/>
+                    <Delete
+                    {...props}
+                />
+                </div>
                 
-               
+                
+
+
+
+  
                 
             </div>
+            
             
         
         </div>

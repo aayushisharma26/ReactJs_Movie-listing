@@ -5,7 +5,7 @@ const Header = () => {
             <div className="boxx"></div>
             <div className="box">
                 <div className="image1">
-                    <img src="Header-image.svg"/>
+                    <img src="header_img.svg"/>
                 </div>
 
                 <div className="word">
