@@ -1,37 +1,27 @@
 import Likedislike from "./likedislike.js";
 import Delete from "./delete.js";
-const Movie_row = (props)=>{
-    return(
-
+import './globals.css'
+const Movie_row = (props) => {
+    return (
         <div className="row">
-            
             <div className="coll">
-                <img src={props.movie1} alt="Flowers in Chania"/> 
+                <img src={props.imageurl} alt="Flowers in Chania" />
             </div>
             <div className="colll">
-                <h1>{props.movie}</h1>
-                <p>{props.moviee}</p>
-                <h1>Description</h1>
-                <div className="action_row"> 
-                    <Likedislike/>
-                    <Delete
-                    {...props}
-                />
+                <div className="col_text">
+                    <h1>{props.Name}</h1>
+                    <h4>{props.votes}</h4>
+                    <h4>{props.year}</h4>
+                    <h4>{props.duration}</h4>
+                    <h4>{props.genre}</h4>
+                    <p>{props.description}</p>
+                    <div className="action_row">
+                        <Likedislike />
+                        <Delete onDelete={props.onDelete} />
+                    </div>
                 </div>
-                
-                
-
-
-
-  
-                
             </div>
-            
-            
-        
         </div>
-
     );
 }
-
 export default Movie_row;

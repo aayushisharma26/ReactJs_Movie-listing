@@ -1,16 +1,13 @@
-import {useState} from "react";
 import Likedislike from "./likedislike.js";
 import Delete from "./delete";
-const Action = (props)=>{
-    return(     
-       <>
+const Action = (props) => {
+    return (
+        <>
             <div className="action_row">
-                <Likedislike/>
-                <Delete/>
-                
+                <Likedislike />
+                <Delete />
             </div>
-       </>
+        </>
     );
 }
-
 export default Action;

@@ -1,67 +1,49 @@
 "use client";
 import Header from "./header.js"
-import MyComponen from "./featch_movie.js"
 import Movie_row from "./movie_row.js"
 import Footer from "./footer.js"
 import './movie.css';
-import Delete from "./delete.js";
-import {useState} from "react";
-
-const people = [
-    {
-      id: 0,
-      name: 'Dear Zindagi',
-      profession: 'Drama Romance',
-      Description: "It's a good movie",
-      image: "image_1.svg",
-    },
-    {
-      id: 1,
-      name: 'Mulan',
-      profession: 'Adventurous Comedy',
-      image: "Brave_img.svg",
-    },
-    {
-      id: 2,
-      name: 'Mulan',
-      profession: 'Adventurous Comedy',
-      image: "moana.svg",
-    },
-    {
-      id: 3,
-      name: 'Mulan',
-      profession: 'Adventurous Comedy',
-      image: "mulan.svg",
-    }
-  ];
+import { useState } from "react";
+import { movies } from "./data.js";
+import MovieForm from "./MovieForm.js";
+import Modal from "./modal.js";  
 
 const App = () => {
-    const [data, setdata] = useState(people);
+    const [data, setData] = useState(movies);
+    const [showForm, setShowForm] = useState(false);
 
-    const handleDelete =(id)=>{
-        const updatedata = data.filter((movie)=> movie.id!== id);
-        setdata(updatedata);
-            
+    const handleDelete = (id) => {
+        const updatedData = data.filter((movie) => movie.id !== id);
+        setData(updatedData);
+    };
+
+    const addMovie = (newMovie) => {
+        setData([...data, newMovie]);
     };
 
     return (
         <>
-            <MyComponen/>        
-                {data.map((movie) =>
-                    <Movie_row
-                        movie = {movie.name}
-                        movie1= {movie.image}
-                        moviee = {movie.name}
-                        onDelete={() => handleDelete(movie.id)}
+            <Header />
+            {data.map((movie) =>
+                <Movie_row
+                    key={movie.id}
+                    Name={movie.name}
+                    imageurl={movie.imageurl}
+                    votes={movie.votes}
+                    year={movie.year}
+                    duration={movie.duration}
+                    genre={movie.genre}
+                    description={movie.description}
+                    onDelete={() => handleDelete(movie.id)}
+                />
+            )}
 
-                    />
-                )}
-            
-            <Footer/>
-        
+            <Footer setShowForm={setShowForm} />  
+            <Modal show={showForm} onClose={() => setShowForm(false)}>
+                <MovieForm addMovie={addMovie} setShowForm={setShowForm} />
+            </Modal>
         </>
     );
 }
 
 export default App;
-

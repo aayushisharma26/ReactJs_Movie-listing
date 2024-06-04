@@ -1,17 +1,10 @@
-const Delete = (props)=>{
-    return(
-        <>
-            <div className="delete">
+import React from "react";
 
-
-                <div onClick ={props.onDelete}><img src="delete.svg"/></div>
-            </div>
-
-            
-
-
-        </>
+const Delete = (props) => {
+    return (
+        <div className="delete" onClick={props.onDelete}>
+            <img src="delete.svg" alt="Delete" />
+        </div>
     );
-}
-
+};
 export default Delete;
